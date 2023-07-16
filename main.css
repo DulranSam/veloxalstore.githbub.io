@@ -1,0 +1,254 @@
+* {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: "Poppins", "Roboto", monospace;
+  background-color: transparent;
+  list-style-type: none;
+  background-image: url("main.jpg");
+  background-blend-mode: darken;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: x-large;
+  
+}
+
+.main{
+  color:white;
+}
+
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-wrapper {
+  /* Telling our absolute positioned video to 
+  be relative to this element */
+  position: relative;
+
+  width: 400px;
+  height: 200px;
+
+  /* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+
+  /* Centering the container's content vertically 
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.navbar{
+  font-size: x-large;
+}
+
+.gallery{
+  padding:5%;
+  background-image: url("alucard-hellsing.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+button {
+  background-color: transparent;
+}
+
+li {
+  float: right;
+  display: flex;
+  text-decoration: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin-top: 3%;
+  padding: 14px 24px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: green;
+  transition: ease-in 0.5s;
+}
+
+.vpng {
+  animation: fadeIn 3s;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.Homedet {
+  text-align: center;
+  font-size: xx-large;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.button-48 {
+  appearance: none;
+  background-color: #ffffff;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #787c74d0;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #ffffff;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+input[type=email] {
+  transition: width 0.5s ease-in-out;
+  font-size: x-large;
+}
+
+input[type=email]:focus {
+  width: 100%;
+}
+
+input[type=email], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #5f5858;
+  color:greenyellow
+}
+
+
+
+
+input[type=textfield] {
+  transition: width 0.5s ease-in-out;
+  font-size: x-large;
+  color:greenyellow;
+}
+
+input[type=textfield]:focus {
+  width: 100%;
+}
+
+input[type=textfield], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.about-us{
+  padding:5%;
+}
+
+
+.contactus{
+  background-image: url("dark2.jpg");
+  background-position: fixed;
+  background-size: cover;
+  padding:7%;
+  text-align: left;
+}
+
+.response{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #5f5858;
+  resize: none;
+  font-size: x-large;
+}
+
+::placeholder{
+  color:grey;
+}

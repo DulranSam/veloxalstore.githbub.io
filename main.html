@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="smiley.ico" type="image/x-icon">
+    <title>Veloxal</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+             <li><a href="#contact">Contact</a></li>    
+            <li><a href="#wex">About Us</a></li>
+            <li><a href="#prod">Products</a></li>  
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="Home">
+            <img src="V.png" alt="v" class="vpng">
+            <div class="Homedet">
+                <h1>Welcome to Veloxal</h1>
+                <br>
+            </div>
+                <div class="gallery" id="prod"> 
+                    <h1>Products</h1>
+                    <p>Our Top Items</p> 
+                    <br>
+                    <img src="" alt="">
+                    <br>
+                    <br>
+                <button class="button-48" onclick="runit()"><a href="https://www.google.com/"></a>Browse More</button>  
+                <script>
+                    function runit(){
+                        alert("Redirecting to External Site!");
+                        window.location.href="https://www.youtube.com/watch?v=gQWiK12aqwk"
+                    }
+                </script>
+                </div>
+                
+                <div class="about-us" id="wex">
+                    <h1>About Us</h1>
+                    <h3>Veloxal is a startup clothing company <br> located in Colombo, Sri Lanka , launched in 2023.  </h3>
+                  
+                    <p>Quality > Quantity!</p>
+                 
+                </div>
+                <div class="contactus" id="contact">
+                    <h1>Contact Us!</h1>
+                    <p>Mail</p>
+                
+                    <input type="email" id="emailInput" placeholder="Your Email..." class="email" >
+                
+                    <p>Inquiry:</p>
+                
+                    <input type="textfield" id="responseInput" placeholder="Your Inquiry..." class="response">
+                    <br><br>
+                    <input type="submit" value="Submit" onclick="submitForm()" class="button-48">
+                  
+                  
+                  <script>
+                        function submitForm(){
+                            const email = document.getElementById("emailInput").value;
+                            const response = document.getElementById("responseInput").value;
+
+                            
+
+                            if(email || response !=""){
+                                alert("Your Response Has Been Sent!");
+                                email.value = window.location.href="mailto:dulransamarasinghe3@gmail.com"
+                                const addressdetails = {
+                                    email,response
+                                }
+                               
+
+                               
+                               
+
+                            } else{
+                                alert("Valid Email Address Required! ")
+                            } 
+                        }
+                  </script>
+                
+
+                  <script src="main.js"></script>
+
+                </div>
+            </div>
+        
+
+        </div>
+    </div>
+</body>
+</html>
